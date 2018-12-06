@@ -1,0 +1,21 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "A simple todo app with node js and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:compile": "node-sass --include-path sass INPUT_FILE.scss OUTPUT_FILE.css"
+  },
+  "author": "Nkengasong Atem",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.15"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
