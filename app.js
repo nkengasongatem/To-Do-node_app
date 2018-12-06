@@ -1,5 +1,5 @@
 let express = require('express');
-let ToDOController = require('./controllers/ToDOController')
+let PlannerController = require('./controllers/PlannerController')
 
 let app = express();
 
@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('./public'));
 
 // run controller
-ToDOController(app);
+PlannerController(app);
 
 // run server
 app.listen(3000);
