@@ -34,7 +34,7 @@ module.exports = (app) => {
 
     app.get('/todo', (req, res) =>{
         // get data from mongodb
-        var data = Todo.find({}, (err, data)=>{
+        Todo.find({}, (err, data)=>{
             if (err) throw err;
             res.render('index', { todos: data});
         });        
@@ -54,7 +54,7 @@ module.exports = (app) => {
         Todo.findOneAndRemove({item: req.params.item.replace(/\-/g," ")}, (err, data) => {
             if (err) throw err;   
             res.json(data);
-            console.log('Item saved');
+            console.log('Item Deleted');
         });
     });
 };
